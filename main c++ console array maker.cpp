@@ -16,7 +16,6 @@ using namespace std;
     int num3=0;
     int length=0;
     int loop1=0 , loop2=0, fulltopnum = 0;
-    //int blacklistarray[50000];
     char anykey = ' ';
     string array2[999999];
     string array3[999999];
@@ -41,12 +40,6 @@ int d=0;
 int main()
 {
 
-   // ofstream outfile;
-  //  outfile.open("sample.txt");
-
-   // outfile << "hello";
-
-    //outfile.close();
 
     ifstream infile;
     infile.open("sample.txt");
@@ -121,7 +114,6 @@ if ( array1[num1][num3] == 44 ) {
 
 
 
-  //  cout<<"Item "<< num1 << ":     " << array1[num1] << endl;
 for (num1=0; num1<topnum; num1++) {
       if (num1%5000==0) { cout<<"\n"<<num1<<" of "<<topnum<<"\n"; }
 
@@ -132,9 +124,9 @@ for (num1=0; num1<topnum; num1++) {
     do {
             for (n=0; n <= topnum; n++) {
 if (n==0) {ordered2=true;}
-                  //  cout<<"\nworking on n = "<<n<<" k = "<< k << "   item1 = " << item1 << "   item 2 = " << item2 << endl;
+                  
         if (repeatarray2[n] < repeatarray2[n + 1] && repeatarray2[n]!=' ' && repeatarray2[n + 1]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+    
 
             x = repeatarray2 [ n + 1];
             y = repeatarray2[n];
@@ -154,11 +146,11 @@ if (n==0) {ordered2=true;}
 
 		ordered2=false; }
 
-		// ADD sixteen jumps to see if it really works
+	
 
 	// #2
 		   if (repeatarray2[n] < repeatarray2[n + 2] && repeatarray2[n]!=' ' && repeatarray2[n + 2]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 2];
             y = repeatarray2[n];
@@ -180,7 +172,7 @@ if (n==0) {ordered2=true;}
 
 		// #3
 		   if (repeatarray2[n] < repeatarray2[n + 3] && repeatarray2[n]!=' ' && repeatarray2[n + 3]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+
 
             x = repeatarray2 [ n + 3];
             y = repeatarray2[n];
@@ -202,7 +194,7 @@ if (n==0) {ordered2=true;}
 
 		// #4
 		   if (repeatarray2[n] < repeatarray2[n + 4] && repeatarray2[n]!=' ' && repeatarray2[n + 4]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 4];
             y = repeatarray2[n];
@@ -223,7 +215,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #5
 		   if (repeatarray2[n] < repeatarray2[n + 5] && repeatarray2[n]!=' ' && repeatarray2[n + 5]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+    
 
             x = repeatarray2 [ n + 5];
             y = repeatarray2[n];
@@ -245,7 +237,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #6
 		   if (repeatarray2[n] < repeatarray2[n + 6] && repeatarray2[n]!=' ' && repeatarray2[n + 6]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 6];
             y = repeatarray2[n];
@@ -267,7 +259,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#7
 		   if (repeatarray2[n] < repeatarray2[n + 7] && repeatarray2[n]!=' ' && repeatarray2[n + 7]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 7];
             y = repeatarray2[n];
@@ -289,7 +281,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#8
 		   if (repeatarray2[n] < repeatarray2[n + 8] && repeatarray2[n]!=' ' && repeatarray2[n + 8]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+    
 
             x = repeatarray2 [ n + 8];
             y = repeatarray2[n];
@@ -311,7 +303,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#9
 		   if (repeatarray2[n] < repeatarray2[n + 9] && repeatarray2[n]!=' ' && repeatarray2[n + 9]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 9];
             y = repeatarray2[n];
@@ -333,7 +325,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #10
 		   if (repeatarray2[n] < repeatarray2[n + 10] && repeatarray2[n]!=' ' && repeatarray2[n + 10]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+    
 
             x = repeatarray2 [ n + 10];
             y = repeatarray2[n];
@@ -355,7 +347,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#11
 		   if (repeatarray2[n] < repeatarray2[n + 11] && repeatarray2[n]!=' ' && repeatarray2[n + 11]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+    
 
             x = repeatarray2 [ n + 11];
             y = repeatarray2[n];
@@ -377,7 +369,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #12
 		   if (repeatarray2[n] < repeatarray2[n + 12] && repeatarray2[n]!=' ' && repeatarray2[n + 12]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+    
 
             x = repeatarray2 [ n + 12];
             y = repeatarray2[n];
@@ -399,7 +391,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#13
 		   if (repeatarray2[n] < repeatarray2[n + 13] && repeatarray2[n]!=' ' && repeatarray2[n + 13]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 13];
             y = repeatarray2[n];
@@ -421,7 +413,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #14
 		   if (repeatarray2[n] < repeatarray2[n + 14] && repeatarray2[n]!=' ' && repeatarray2[n + 14]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 14];
             y = repeatarray2[n];
@@ -443,7 +435,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #15
 		   if (repeatarray2[n] < repeatarray2[n + 15] && repeatarray2[n]!=' ' && repeatarray2[n + 15]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 15];
             y = repeatarray2[n];
@@ -465,7 +457,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#16
 		   if (repeatarray2[n] < repeatarray2[n + 16] && repeatarray2[n]!=' ' && repeatarray2[n + 16]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 16];
             y = repeatarray2[n];
@@ -487,7 +479,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#17
 		   if (repeatarray2[n] < repeatarray2[n + 17] && repeatarray2[n]!=' ' && repeatarray2[n + 17]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 17];
             y = repeatarray2[n];
@@ -512,19 +504,16 @@ if (n==0) {ordered2=true;}
 
 
 
-		//cout<<"\nhya\n";
-		//if (n==topnum) break;
 
 
         }  if (ordered2==true) { break; }
-           //took out k, hoping for ordered's angle run
-            //rank sort
+           
     } while (ordered==false);
 
 
 
     cout<<"\n\nEarly Sort Complete\n\n";
-      } //end if num1=10,000
+      } 
 
       //end early sort lines 110-510
       ordered=false; ordered2=false;
@@ -532,7 +521,7 @@ for (num2=0; num2<num1; num2++) {
         if (array1[num1] == array1[num2])
         {
             repeatarray[num2]++;
-            //boost the early bird, num1 is the highest in the second loop
+            
 
 
             array1[num1]="[cleared]";
@@ -553,8 +542,7 @@ for (num2=0; num2<num1; num2++) {
     //print all strings
 num3=0;
    for (num1=0; num1<=topnum; num1++) {
-        if ( array1[num1]!="[cleared]" && array1[num1][0]!=' ') {//repeatarray[num1]>50 &&
-     //   cout<< array1[num1] << " : \t"<<repeatarray[num1] <<endl;
+        if ( array1[num1]!="[cleared]" && array1[num1][0]!=' ') {
         array2[num3] = array1[num1];
         repeatarray2[num3] = repeatarray[num1];
         rankarray[num3]=num3;
@@ -567,9 +555,9 @@ cout<<"\nnow starting bubblesort\n";
     do {
             for (n=0; n <= topnum; n++) {
 if (n==0) {ordered2=true;}
-                  //  cout<<"\nworking on n = "<<n<<" k = "<< k << "   item1 = " << item1 << "   item 2 = " << item2 << endl;
+                  
         if (repeatarray2[n] < repeatarray2[n + 1] && repeatarray2[n]!=' ' && repeatarray2[n + 1]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 1];
             y = repeatarray2[n];
@@ -589,11 +577,11 @@ if (n==0) {ordered2=true;}
 
 		ordered2=false; }
 
-		// ADD sixteen jumps to see if it really works
+		
 
 	// #2
 		   if (repeatarray2[n] < repeatarray2[n + 2] && repeatarray2[n]!=' ' && repeatarray2[n + 2]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+    
 
             x = repeatarray2 [ n + 2];
             y = repeatarray2[n];
@@ -615,7 +603,7 @@ if (n==0) {ordered2=true;}
 
 		// #3
 		   if (repeatarray2[n] < repeatarray2[n + 3] && repeatarray2[n]!=' ' && repeatarray2[n + 3]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 3];
             y = repeatarray2[n];
@@ -637,7 +625,7 @@ if (n==0) {ordered2=true;}
 
 		// #4
 		   if (repeatarray2[n] < repeatarray2[n + 4] && repeatarray2[n]!=' ' && repeatarray2[n + 4]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 4];
             y = repeatarray2[n];
@@ -658,7 +646,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #5
 		   if (repeatarray2[n] < repeatarray2[n + 5] && repeatarray2[n]!=' ' && repeatarray2[n + 5]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 5];
             y = repeatarray2[n];
@@ -680,7 +668,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #6
 		   if (repeatarray2[n] < repeatarray2[n + 6] && repeatarray2[n]!=' ' && repeatarray2[n + 6]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 6];
             y = repeatarray2[n];
@@ -702,7 +690,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#7
 		   if (repeatarray2[n] < repeatarray2[n + 7] && repeatarray2[n]!=' ' && repeatarray2[n + 7]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 7];
             y = repeatarray2[n];
@@ -724,7 +712,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#8
 		   if (repeatarray2[n] < repeatarray2[n + 8] && repeatarray2[n]!=' ' && repeatarray2[n + 8]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 8];
             y = repeatarray2[n];
@@ -746,7 +734,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#9
 		   if (repeatarray2[n] < repeatarray2[n + 9] && repeatarray2[n]!=' ' && repeatarray2[n + 9]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 9];
             y = repeatarray2[n];
@@ -768,7 +756,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #10
 		   if (repeatarray2[n] < repeatarray2[n + 10] && repeatarray2[n]!=' ' && repeatarray2[n + 10]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 10];
             y = repeatarray2[n];
@@ -790,7 +778,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#11
 		   if (repeatarray2[n] < repeatarray2[n + 11] && repeatarray2[n]!=' ' && repeatarray2[n + 11]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 11];
             y = repeatarray2[n];
@@ -812,7 +800,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #12
 		   if (repeatarray2[n] < repeatarray2[n + 12] && repeatarray2[n]!=' ' && repeatarray2[n + 12]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 12];
             y = repeatarray2[n];
@@ -834,7 +822,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#13
 		   if (repeatarray2[n] < repeatarray2[n + 13] && repeatarray2[n]!=' ' && repeatarray2[n + 13]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 13];
             y = repeatarray2[n];
@@ -856,7 +844,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #14
 		   if (repeatarray2[n] < repeatarray2[n + 14] && repeatarray2[n]!=' ' && repeatarray2[n + 14]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 14];
             y = repeatarray2[n];
@@ -878,7 +866,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		// #15
 		   if (repeatarray2[n] < repeatarray2[n + 15] && repeatarray2[n]!=' ' && repeatarray2[n + 15]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 15];
             y = repeatarray2[n];
@@ -900,7 +888,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#16
 		   if (repeatarray2[n] < repeatarray2[n + 16] && repeatarray2[n]!=' ' && repeatarray2[n + 16]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 16];
             y = repeatarray2[n];
@@ -922,7 +910,7 @@ if (n==0) {ordered2=true;}
 		ordered2=false; }
 		//#17
 		   if (repeatarray2[n] < repeatarray2[n + 17] && repeatarray2[n]!=' ' && repeatarray2[n + 17]!=' ') {
-       //   cout<<"n = "<<n<<"    "<<array2[n] << "( "<<repeatarray2[n]<<" )    vs   " << array2[n+1] <<"("<<repeatarray2[n+1]<<")"<<endl;
+       
 
             x = repeatarray2 [ n + 17];
             y = repeatarray2[n];
@@ -947,12 +935,8 @@ if (n==0) {ordered2=true;}
 
 
 
-		//cout<<"\nhya\n";
-		//if (n==topnum) break;
-
 
         }  if (ordered2==true) { break; }
-           //took out k, hoping for ordered's angle run
             //rank sort
     } while (ordered==false);
 
@@ -1387,9 +1371,6 @@ int a=0;
 
 
 
-    //if (repeatarray2[0]>=125) { multiplier =   }
-
-    //if (repeatarray2[0]>=125) { multiplier =   }
 
 
     for (loop1=0; loop1<topnum; loop1++) {
@@ -1413,8 +1394,6 @@ int a=0;
 } // end loop 1
 
 
-//end added code AND post finished data
-//myfile<<".style"<<a<< "{background-color: #"<< std::hex<< r<<g<<b<<std::dec<<";}\n";
 
 for (arraymakerloop=0; arraymakerloop<array3[a].length(); arraymakerloop++) {
 
@@ -1486,7 +1465,7 @@ if (periodcommaarray[a]==',') {
         myfile<<"char array3["<<charcount<<"];";
 
 myfile.close();
-//end array maker code the new new guy was it
+
 
 
 
@@ -1506,4 +1485,5 @@ myfile.close();
     cout << "Hello world!" << endl;
     return 0;
 }
+
 
