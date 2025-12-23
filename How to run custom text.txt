@@ -1,0 +1,13 @@
+I used Codeblocks 13.12 with mingw compiler (the one that is a 100mb download).
+To enter custom text, paste 'main c++ console array maker.cpp' in a console C++ project
+and then build. Find the project folder with array maker.exe in explorer.
+Create a text file specifically named 'sample.txt' in the same folder.
+Type or paste data in the 'sample.txt' text file. Save text file,
+close window, then run array maker.exe. 
+
+A file named double arrays.txt should appear in the same folder as array maker.exe .
+Create an OpenGL C project and paste the contents 'main opengl xcon.c' in main.c .
+Open double arrays.txt , press Select All, then press Copy. Highlight array1,
+pointsarray, maxchar0, array2, and array3 declarations in XCON and then paste
+the data of double arrays.txt over them from your clipboard. Select Build on the
+menu bar on the top of the screen, then 'Build and Run'. XCON should appear with custom text.
